@@ -137,3 +137,23 @@ main{
       width: 75%;
     }
   }
+  
+  /* ajustes horizontal y vertical para el mapa */
+  
+  .mapa-ubicacion {
+    width: 100%;
+    max-width: 75%;
+    height: 600px;  
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+  }
+
+  @media (max-width: 768px) {
+    .mapa-ubicacion {
+      height: 300px;
+      max-width: 100%;
+    }
+  }
+  
