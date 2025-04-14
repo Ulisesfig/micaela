@@ -68,6 +68,7 @@ main{
     text-align: start;
 }
 
+/* clase para subtitulos con texto de color negro */
 .subtitulo-negro{
     font-size: 1.5rem;
     font-weight: bolder;
@@ -81,7 +82,7 @@ main{
     color: white;
     text-align: start;
 }
-
+/* clase para las descripciones o precios con texto de color negro */
 .extra-negro{
     font-size: 1.5rem;
     font-weight: normal;
@@ -98,42 +99,14 @@ main{
 }
 
 
-
-/* pagina shop */
-.shop{
-    font-size: 1.5rem;
-}
-.shop .prod{
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 2rem;
-}
-.shop .prec{
-    color: white;
-    font-weight: 600;
-}
-
-
-
-
 /* pagina sale */
 
-.sale{
-    font-size: 1.5rem;
-}
-.sale h5{
-    color: black;
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
-.sale p{
-    font-weight: normal;
-    font-size:large;
-}
+/* clase para tachar el texto (utilizado en tachar los precios viejos) */
 .tachado{
     text-decoration: line-through;
 }
+
+
 .oferta{
     font-weight: bold;
     font-size: 0.9rem;
@@ -152,6 +125,7 @@ main{
     font-weight: bold;
 }
 
+/* media query para el acordeon */
 .mi-acordeon {
     width: 100%;
     margin: 0 auto;
@@ -163,9 +137,3 @@ main{
       width: 75%;
     }
   }
-
-.lgo{
-    color: white;
-}
-
-
