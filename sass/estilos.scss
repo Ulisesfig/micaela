@@ -25,9 +25,11 @@ body{
 }
 
 /* pagina index */
-
+.nuevos{
+    @include flex(row,center,center);
+    @include titulo;
+}
 .ingresos{
-    padding: 5rem 0;
     .media{
         @include flex(row,center,center);
     }
