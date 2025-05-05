@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* fonts */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* fuentes utilizadas */
+/* font-family: "Alegreya Sans", sans-serif; */
+/* font-family: "IBM Plex Serif", serif; */
+.mi-clase {
+  background-color: #ffffff;
+  /* Dispositivos pequeños */
+}
+.mi-clase .logo {
+  width: 250px;
+  height: auto;
+  max-width: 600px;
+}
+@media (max-width: 992px) {
+  .mi-clase .logo {
+    max-width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .mi-clase .logo {
+    max-width: 200px;
+  }
+}
+.mi-clase .posicion {
+  justify-content: end;
+}
+.mi-clase a {
+  color: #000000;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.mi-clase .zoom-text {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.mi-clase .zoom-text:hover {
+  transform: scale(1.1);
+  color: #000000;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: #000000;
+  /* Dispositivos pequeños */
+}
+footer h5 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+footer p, footer a {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer .logo {
+  width: 250px;
+  height: auto;
+  max-width: 600px;
+}
+@media (max-width: 992px) {
+  footer .logo {
+    max-width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  footer .logo {
+    max-width: 200px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+/* Cambio de color fondo */
+body {
+  background-color: #5a5a5a;
+}
+
+/* clase para enmaquetar la navegacion actual */
+.migaja {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* pagina index */
+.ingresos {
+  padding: 5rem 0;
+}
+.ingresos .media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ingresos h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.ingresos h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+}
+.ingresos p, .ingresos footer a, footer .ingresos a {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-top: auto;
+  text-align: center;
+}
+.ingresos .zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ingresos .zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* pagina mi cuenta */
+.micuenta .titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.micuenta .subtitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.micuenta .extra {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* pagina shop */
+.shop .subtitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #000000;
+}
+.shop .extra {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  color: #000000;
+}
+.shop .zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shop .zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* pagina sale */
+.sale h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.sale .oferta {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+.sale .subtitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #000000;
+  text-align: start;
+}
+.sale .extra {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  color: #000000;
+  text-align: start;
+}
+.sale .tachado {
+  text-decoration: line-through;
+}
+.sale .zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sale .zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* pagina de preguntas frecuentes */
+.preg .titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.preg .subtitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.preg .extra {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  color: #000000;
+}
+.preg .mi-acordeon {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .preg .mi-acordeon {
+    width: 75%;
+  }
+}
+.preg .mapa-ubicacion {
+  width: 100%;
+  max-width: 75%;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .preg .mapa-ubicacion {
+    height: 300px;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

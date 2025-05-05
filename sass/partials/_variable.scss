@@ -1,0 +1,44 @@
+/* fonts */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* fuentes utilizadas */
+/* font-family: "Alegreya Sans", sans-serif; */
+/* font-family: "IBM Plex Serif", serif; */
+
+
+$color1:#000000;
+$color2:#ffffff;
+$color3:#5a5a5a;
+$fonth: "IBM Plex Serif", serif;
+$font:"Alegreya Sans", sans-serif;
+$fcolor:#000000;
+$fcolor2:#ffffff;
+
+@mixin flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin titulo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+@mixin subtitulo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: $font;
+}
+
+@mixin extra{
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+

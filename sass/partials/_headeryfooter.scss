@@ -1,0 +1,83 @@
+
+
+.mi-clase{
+    background-color: $color2;
+    .logo {
+        width: 250px;
+        height: auto;
+        max-width: 600px; 
+    }
+    @media (max-width: 992px) {
+        .logo {
+          max-width: 250px;
+        }
+      }
+      
+      /* Dispositivos pequeños */
+      @media (max-width: 576px) {
+        .logo {
+          max-width: 200px;
+        }
+      }
+    .posicion{
+        justify-content: end;
+    }
+    a{
+        color:  $fcolor;
+        font-family: $fonth;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .zoom-text {
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+      
+    .zoom-text:hover {
+        transform: scale(1.1);
+        color: $color1;
+    }
+      
+}
+
+
+footer{
+    margin-top: 3rem;
+    background-color: $color1;
+
+    h5{
+        color: $fcolor2;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    p{
+        color: $fcolor2;
+        font-size: 1.3rem;
+    }
+    a{
+        @extend p;
+        text-decoration: none;
+    }
+    .logo {
+        width: 250px;
+        height: auto;
+        max-width: 600px; 
+    }
+    @media (max-width: 992px) {
+        .logo {
+          max-width: 250px;
+        }
+      }
+      
+      /* Dispositivos pequeños */
+      @media (max-width: 576px) {
+        .logo {
+          max-width: 200px;
+        }
+      }
+}
+
+
+
+

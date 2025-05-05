@@ -6,30 +6,28 @@
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!-- enlazar al archivo css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>MICAELA</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg mi-clase">
-            <div class="container-fluid">
-                <!-- logo de la marca -->
-              <a class="navbar-brand" href="../index.html"><img class="logo" src="../assents/logo.PNG" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <!-- menu navegacion -->
-                <div class="navbar-nav">
-                  <a class="nav-link mx-4" href="./micuenta.html">Mi Cuenta</a>
-                  <a class="nav-link mx-4" href="./shop.html">Shop</a>
-                  <a class="nav-link mx-4" href="./sale.html">SALE</a>
-                  <a class="nav-link mx-4" href="./pregfrec.html">Preguntas Frecuentes</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg mi-clase">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../assents/logo.PNG" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse posicion" id="navbarNavAltMarkup">
+          <div class="navbar-nav p-3">
+            <a class="nav-link mx-auto zoom-text" href="micuenta.html">Mi Cuenta</a>
+            <a class="nav-link mx-auto zoom-text" href="shop.html">Shop</a>
+            <a class="nav-link mx-auto zoom-text" href="sale.html">Sale</a>
+            <a class="nav-link mx-auto zoom-text" href="pregfrec.html">Preguntas Frecuentes</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     
    
     <main>
@@ -42,13 +40,14 @@
                 <li aria-current="page" class="breadcrumb-item active">Mi Cuenta</li>
             </ol>
         </nav>
-          <div class="container pb-5">
-            <div class="row row-cols-1 row-cols-md-2 gx-5 gy-4">
+          <div class="container-fluid p-4 micuenta">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 gx-3 gy-4 text-light">
               <!-- Ingresar -->
               <div class="col">
                 <div class="bg-dark p-4 rounded shadow-sm h-100">
                   <form>
                     <h1 class="titulo">Ingresar</h1>
+                    <br>
                     <div class="mb-4">
                       <label for="emailLogin" class="form-label subtitulo">Dirección de correo electrónico</label>
                       <input type="email" class="form-control fs-5" id="emailLogin" aria-describedby="emailHelpLogin" autocomplete="off">
@@ -63,7 +62,7 @@
                       <label class="form-check-label extra" for="rememberLogin">Recuérdame</label>
                     </div>
                     <div class="d-flex justify-content-center">
-                      <button type="submit" class="btn btn-secondary">Ingresar</button>
+                      <button type="submit" class="btn btn-secondary extra">Ingresar</button>
                     </div>
                   </form>
                 </div>
@@ -73,6 +72,7 @@
                 <div class="bg-dark p-4 rounded shadow-sm h-100">
                   <form>
                     <h1 class="titulo">Registrarse</h1>
+                    <br>
                     <div class="mb-4">
                       <label for="emailRegister" class="form-label subtitulo">Dirección de correo electrónico</label>
                       <input type="email" class="form-control fs-5" id="emailRegister" aria-describedby="emailHelpRegister" autocomplete="off">
@@ -83,7 +83,7 @@
                       <input type="password" class="form-control fw-bold fs-5" id="passwordRegister" autocomplete="off">
                     </div>
                     <div class="d-flex justify-content-center">
-                      <button type="submit" class="btn btn-secondary">Registrarse</button>
+                      <button type="submit" class="btn btn-secondary extra">Registrarse</button>
                     </div>
                   </form>
                 </div>
@@ -93,34 +93,34 @@
     </main>
 
     
-    <footer class="mt-5" >
-        <div class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Nosotros</h5>
-                    <hr class="mb-1">
-                    <p class="text-light">Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Ayuda</h5>
-                    <hr class="mb-1">
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Como Comprar</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Envio y Seguimiento</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Medios de Pago</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Preguntas Frecuentes</a></p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Seguinos</h5>
-                    <hr class="mb-1">
-                    <p><a href="https://www.instagram.com/micaelaooficial/" class="text-light text-decoration-none">Instagram</a></p>
-                    <p><a href="https://www.facebook.com/" class="text-light text-decoration-none">Facebook</a></p>
-                    <p><a href="https://www.tiktok.com/" class="text-light text-decoration-none">Tiktok</a></p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-5 logo">
-                    <h5><a href="../index.html"><img class="img-fluid" src="../assents/logo_en_negro.PNG" alt="logo_de_micaela"></a></h5>
-                </div>
-            </div>
-        </div>
+    <footer>
+      <div class="container">
+          <div class="row text-center text-md-start ">
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>NOSOTROS</h5>
+                  <hr class="mb-2">
+                  <p>Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>AYUDA</h5>
+                  <hr class="mb-2">
+                  <p><a href="./pregfrec.html#como_comprar">Como Comprar</a></p>
+                  <p><a href="./pregfrec.html#envio_seguimiento">Envio y Seguimiento</a></p>
+                  <p><a href="./pregfrec.html#medios_pago">Medios de Pago</a></p>
+                  <p><a href="./pregfrec.html">Preguntas Frecuentes</a></p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>SEGUINOS</h5>
+                  <hr class="mb-2">
+                  <p><a href="https://www.instagram.com/micaelaooficial/">Instagram</a></p>
+                  <p><a href="https://www.facebook.com/">Facebook</a></p>
+                  <p><a href="https://www.tiktok.com/">Tiktok</a></p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto m-5 logo">
+                  <h5><a href="../index.html"><img class="img-fluid" src="../assents/logo_en_negro.PNG" alt="logo_de_micaela"></a></h5>
+              </div>
+          </div>
+      </div>
     </footer>
     <!-- css js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>

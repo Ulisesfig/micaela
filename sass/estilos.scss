@@ -1,0 +1,179 @@
+@import "partials/variable";
+@import "partials/headeryfooter";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+/* Cambio de color fondo */
+
+body{
+    background-color: $color3;
+}
+
+
+/* clase para enmaquetar la navegacion actual */
+
+.migaja{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    color: $color2;
+}
+
+/* pagina index */
+
+.ingresos{
+    padding: 5rem 0;
+    .media{
+        @include flex(row,center,center);
+    }
+    h1{
+        @include titulo;
+    }
+    h5{
+        @include subtitulo;
+        color: $fcolor;
+        text-align: center
+    }
+    p{
+        @include extra;
+        font-size: 1.3rem;
+        color: $color1;
+        margin-top: auto;
+        text-align: center
+    }
+    .zoom {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+      
+    .zoom:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+    }
+}
+
+
+/* pagina mi cuenta */
+
+.micuenta{
+    .titulo{
+        @include titulo;
+    }
+    .subtitulo{
+        @include subtitulo;
+    }
+    .extra{
+        @include extra;
+    }
+}
+
+
+/* pagina shop */
+
+.shop{
+    .subtitulo{
+        @include subtitulo;
+        color: $color1;
+    }
+    .extra{
+        @include extra;
+        color: $color1;
+    }
+    .zoom {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+      
+    .zoom:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+    }
+}
+
+
+
+/* pagina sale */
+
+.sale{
+    h1{
+        @include titulo;
+    }
+    .oferta{
+        font-weight: bold;
+        font-size: 0.9rem;
+        color:  $fcolor2;
+        background-color: $color1;
+    }
+    .subtitulo{
+        @include subtitulo;
+        color: $color1;
+        text-align: start;
+    }
+    .extra{
+        @include extra;
+        color: $color1;
+        text-align: start;
+    }
+    .tachado{
+        text-decoration: line-through;
+    }
+    .zoom {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .zoom:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+    }
+}
+
+
+
+
+/* pagina de preguntas frecuentes */
+
+.preg{
+
+    .titulo{
+        @include titulo;
+    }
+    .subtitulo{
+        @include subtitulo;
+    }
+    .extra{
+        @include extra;
+        color: $color1;
+    }
+    .mi-acordeon {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    @media (min-width: 768px) {
+    .mi-acordeon {
+        width: 75%;
+        }
+    }
+    .mapa-ubicacion {
+        width: 100%;
+        max-width: 75%;
+        height: 600px;  
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin: 0 auto; 
+    }
+    @media (max-width: 768px) {
+    .mapa-ubicacion {
+         height: 300px;
+        max-width: 100%;
+        }
+     }
+}
+
+

@@ -6,32 +6,30 @@
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!-- enlazar al archivo css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>MICAELA</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg mi-clase">
-            <div class="container-fluid">
-                <!-- logo de la marca -->
-              <a class="navbar-brand" href="../index.html"><img class="logo" src="../assents/logo.PNG" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <!-- menu navegacion -->
-                <div class="navbar-nav">
-                  <a class="nav-link mx-4" href="./micuenta.html">Mi Cuenta</a>
-                  <a class="nav-link mx-4" href="./shop.html">Shop</a>
-                  <a class="nav-link mx-4" href="./sale.html">SALE</a>
-                  <a class="nav-link mx-4" href="./pregfrec.html">Preguntas Frecuentes</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg mi-clase">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../assents/logo.PNG" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse posicion" id="navbarNavAltMarkup">
+          <div class="navbar-nav p-3">
+            <a class="nav-link mx-auto zoom-text" href="micuenta.html">Mi Cuenta</a>
+            <a class="nav-link mx-auto zoom-text" href="shop.html">Shop</a>
+            <a class="nav-link mx-auto zoom-text" href="sale.html">Sale</a>
+            <a class="nav-link mx-auto zoom-text" href="pregfrec.html">Preguntas Frecuentes</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     
-    <main>
+    <main class="preg">
         <section>
             <!-- Navegacion actual(para ver en que pagina estas actualmente) -->
             <nav class="migaja" aria-label="breadcrumb">
@@ -43,18 +41,18 @@
                 </ol>
             </nav>
             <!-- titulo -->
-            <h1 class="titulo">Preguntas Frecuentes</h1>
+            <h1 class="titulo pb-3">Preguntas Frecuentes</h1>
             <!-- comienzo del acordeon con preguntas y respuestas -->
             <div class="accordion mi-acordeon" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item bg-dark-subtle">
                   <h2 class="accordion-header">
                     <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        <p class="preg">¿Quienes somos?</p>
+                        <p class="subtitulo">¿Quienes somos?</p>
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
-                      <strong class="fw-semibold">MICAELA es una marca de indumentaria femenina. <br>
+                      <strong class="extra">MICAELA es una marca de indumentaria femenina. <br>
                         Somos fabricantes y vendemos por menor. <br>
                         Estamos en Rivadavia 123, Catamarca, Capital. <br>
                         Lunes a Viernes de 9 a 13hs/ 18 a 21hs y Sabados de 9 a 13hs.
@@ -64,12 +62,12 @@
                 <div class="accordion-item bg-dark-subtle">
                   <h2 class="accordion-header">
                     <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <p class="preg">¿Como hacer un pedido por la web?</p>
+                        <p class="subtitulo">¿Como hacer un pedido por la web?</p>
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      <strong class="fw-semibold">Agrega los productos que te gusten al carrito seleccionando cantidad y color. <br>
+                      <strong class="extra">Agrega los productos que te gusten al carrito seleccionando cantidad y color. <br>
                         -Completa los datos personales, selecciona la forma de envio y metodo de pago. <br>
                         -Una vez realizado el pedido nos comunicamos a tu whatsapp dentro de 24hs para coordinar el pago y envio. <br>
                         <br>IMPORTANTE: Los pedidos se preparan una vez confirmado el pago, puede demorar hasta 48hs habiles. <br>
@@ -81,12 +79,12 @@
                 <div class="accordion-item bg-dark-subtle">
                   <h2 class="accordion-header">
                     <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        <p class="preg" id="#como_comprar">Envios</p>
+                        <p class="subtitulo" id="#como_comprar">Envios</p>
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      <strong class="fw-semibold">RETIRO POR LOCAL, Rivadavia 123. de 9 a 13hs/ 18 a 21hs. <br>
+                      <strong class="extra">RETIRO POR LOCAL, Rivadavia 123. de 9 a 13hs/ 18 a 21hs. <br>
                         /ENCOMIENDAS: $1.500 El pedido es despachado a la sucursal de expreso indicado por el cliente (12hs) <br>
                         CORREO ARGENTINO SUCURSAL: $9.800. (4 a 7 dias habiles) <br>
                         CORREO ARGENTINO DOMICILIO: $12.000. (4 a 7 dias habies) <br>
@@ -99,12 +97,12 @@
                 <div class="accordion-item bg-dark-subtle">
                     <h2 class="accordion-header">
                       <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        <p class="preg">Medios de pago</p>
+                        <p class="subtitulo">Medios de pago</p>
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
                       <div class="accordion-body">
-                        <strong class="fw-semibold">Efectivo en el local. <br>
+                        <strong class="extra">Efectivo en el local. <br>
                             Transferencia/deposito.
                       </div>
                     </div>
@@ -112,12 +110,12 @@
                   <div class="accordion-item bg-dark-subtle">
                     <h2 class="accordion-header">
                       <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                        <p class="preg">Cambios</p>1
+                        <p class="subtitulo">Cambios</p>1
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
                       <div class="accordion-body">
-                        <strong class="fw-semibold">Los productos con fallas de produccion seran cambiados por el mismo articulo. <br>
+                        <strong class="extra">Los productos con fallas de produccion seran cambiados por el mismo articulo. <br>
                             Los jeans se pueden cambiar por talle en el local siempre y cuando haya stock y el talle deseado.
                       </div>
                     </div>
@@ -125,8 +123,8 @@
               </div>
         </section>
 
-        <div class="container-fluid p-5">
-          <h1 class="titulo">Nuestro Local</h1>
+        <div class="container-fluid p-3">
+          <h1 class="titulo pb-3">Nuestro Local</h1>
           <div class="mapa-ubicacion">
             <iframe
               src="https://www.google.com/maps?q=Rivadavia+123,+Catamarca,+Argentina&output=embed"
@@ -138,34 +136,34 @@
     </main>
 
 
-    <footer class="mt-5" >
-        <div class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Nosotros</h5>
-                    <hr class="mb-1">
-                    <p class="text-light">Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Ayuda</h5>
-                    <hr class="mb-1">
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Como Comprar</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Envio y Seguimiento</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Medios de Pago</a></p>
-                    <p><a href="./pregfrec.html" class="text-light text-decoration-none">Preguntas Frecuentes</a></p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Seguinos</h5>
-                    <hr class="mb-1">
-                    <p><a href="https://www.instagram.com/micaelaooficial/" class="text-light text-decoration-none">Instagram</a></p>
-                    <p><a href="https://www.facebook.com/" class="text-light text-decoration-none">Facebook</a></p>
-                    <p><a href="https://www.tiktok.com/" class="text-light text-decoration-none">Tiktok</a></p>
-                </div>
-                <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-5 logo">
-                    <h5><a href="../index.html"><img class="img-fluid" src="../assents/logo_en_negro.PNG" alt="logo_de_micaela"></a></h5>
-                </div>
-            </div>
-        </div>
+    <footer>
+      <div class="container">
+          <div class="row text-center text-md-start ">
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>NOSOTROS</h5>
+                  <hr class="mb-2">
+                  <p>Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>AYUDA</h5>
+                  <hr class="mb-2">
+                  <p><a href="./pregfrec.html#como_comprar">Como Comprar</a></p>
+                  <p><a href="./pregfrec.html#envio_seguimiento">Envio y Seguimiento</a></p>
+                  <p><a href="./pregfrec.html#medios_pago">Medios de Pago</a></p>
+                  <p><a href="./pregfrec.html">Preguntas Frecuentes</a></p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
+                  <h5>SEGUINOS</h5>
+                  <hr class="mb-2">
+                  <p><a href="https://www.instagram.com/micaelaooficial/">Instagram</a></p>
+                  <p><a href="https://www.facebook.com/">Facebook</a></p>
+                  <p><a href="https://www.tiktok.com/">Tiktok</a></p>
+              </div>
+              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto m-5 logo">
+                  <h5><a href="../index.html"><img class="img-fluid" src="../assents/logo_en_negro.PNG" alt="logo_de_micaela"></a></h5>
+              </div>
+          </div>
+      </div>
     </footer>
     <!-- css js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
