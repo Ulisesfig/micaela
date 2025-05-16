@@ -73,6 +73,7 @@ body{
         font-size: 1.5rem;
         color: $color1;
     }
+    // clase para animacion de zoom
     .zoom {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 100%;
@@ -139,13 +140,13 @@ body{
         gap: 0.5rem;
         padding-bottom: 1rem;
     }
-
+    // media queries para que en dispositivos medianos se vea las card de ropa en 3 columnas
     @media (min-width: 768px) {
         .shop-grid {
             grid-template-columns: repeat(3, 1fr);
         }
     }
-
+    // media queries para que en dispositivos grandes se vea las card de ropa en 4 columnas
     @media (min-width: 992px) {
         .shop-grid {
             grid-template-columns: repeat(4, 1fr);
@@ -175,9 +176,6 @@ body{
 }
 
 
-
-
-
 /* pagina sale */
 .sale{
     h1{
@@ -197,19 +195,18 @@ body{
         gap: 0.5rem;
         padding-bottom: 1rem;
     }
-
+    // media queries para que en dispositivos medianos se vea las card de ropa en 3 columnas
     @media (min-width: 768px) {
         .sale-grid {
             grid-template-columns: repeat(3, 1fr);
         }
     }
-
+    // media queries para que en dispositivos grandes se vea las card de ropa en 4 columnas
     @media (min-width: 992px) {
         .sale-grid {
             grid-template-columns: repeat(4, 1fr);
         }
     }
-
     .oferta{
         font-weight: bold;
         font-size: 0.9rem;
@@ -242,8 +239,6 @@ body{
         z-index: 1;
     }
 }
-
-
 
 
 /* pagina de preguntas frecuentes */
@@ -294,6 +289,7 @@ body{
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
     }
+    // media queries para que el mapa se vea bien en dipositivos de 768px para abajo
     @media (max-width: 768px) {
     .mapa-ubicacion {
         height: 400px;
@@ -301,5 +297,4 @@ body{
         }
      }
 }
-
 
