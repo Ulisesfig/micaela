@@ -236,7 +236,7 @@ body {
 
 /* pagina shop */
 .shop-container {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 @media (min-width: 768px) {
   .shop-container .shop-container {
@@ -293,7 +293,7 @@ body {
 }
 
 .sale-container {
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 @media (min-width: 768px) {
   .sale-container .sale-container {
