@@ -34,6 +34,7 @@ body{
     }
 }
 .ingresoscontainer{
+    padding: 1rem;
     padding-bottom: 2rem;
     .ingresos{
         display: grid;
@@ -50,9 +51,7 @@ body{
         }
     }
     .item {
-        display: flex;
-        padding: 1rem;
-        border-radius: 4px;
+        padding: 0.5rem;
     }
     strong{
         @include subtitulo;
@@ -60,13 +59,14 @@ body{
     }
     .ropa{
         display: flex;
-        text-align:center;
+        text-align: center;
+        justify-content: center;
         height: 50%;
     }
     .precio{
         display: flex;
         justify-content: center;
-        align-items: center; 
+        text-align: center; 
     }
     p{
         @include extra;

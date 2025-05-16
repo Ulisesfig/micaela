@@ -132,6 +132,7 @@ body {
 }
 
 .ingresoscontainer {
+  padding: 1rem;
   padding-bottom: 2rem;
 }
 .ingresoscontainer .ingresos {
@@ -149,9 +150,7 @@ body {
   }
 }
 .ingresoscontainer .item {
-  display: flex;
-  padding: 1rem;
-  border-radius: 4px;
+  padding: 0.5rem;
 }
 .ingresoscontainer strong {
   font-size: 1.5rem;
@@ -163,12 +162,13 @@ body {
 .ingresoscontainer .ropa {
   display: flex;
   text-align: center;
+  justify-content: center;
   height: 50%;
 }
 .ingresoscontainer .precio {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .ingresoscontainer p, .ingresoscontainer footer a, footer .ingresoscontainer a {
   font-family: "Alegreya Sans", sans-serif;
