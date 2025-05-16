@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accedé a tu cuenta en Micaela para ver tus pedidos, guardar favoritos y gestionar tu información. Comprá con beneficios exclusivos.">
+    <meta name="keywords" content="mi cuenta, acceder, iniciar sesión, historial de compras, cuenta cliente, seguimiento de pedidos, perfil Micaela, datos personales">
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!-- enlazar al archivo css -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>MICAELA</title>
+    <title>MI CUENTA - MICAELA</title>
 </head>
 <body>
   <header>
@@ -29,8 +31,7 @@
     </nav>
   </header>
     
-   
-    <main>
+  <main>
          <!-- Navegacion actual(para ver en que pagina estas actualmente) -->
         <nav class="migaja" aria-label="breadcrumb">
             <ol class="breadcrumb ">
@@ -40,13 +41,13 @@
                 <li aria-current="page" class="breadcrumb-item active">Mi Cuenta</li>
             </ol>
         </nav>
-          <div class="container-fluid p-4 micuenta">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 gx-3 gy-4 text-light">
+          <div class="micuenta-container">
+            <div class="micuenta-grid">
               <!-- Ingresar -->
-              <div class="col">
-                <div class="bg-dark p-4 rounded shadow-sm h-100">
+              <div>
+                <div class="forma-card">
                   <form>
-                    <h1 class="titulo">Ingresar</h1>
+                    <h2 class="titulo">Ingresar</h2>
                     <br>
                     <div class="mb-4">
                       <label for="emailLogin" class="form-label subtitulo">Dirección de correo electrónico</label>
@@ -68,10 +69,10 @@
                 </div>
               </div>
               <!-- Registrarse -->
-              <div class="col">
-                <div class="bg-dark p-4 rounded shadow-sm h-100">
+              <div>
+                <div class="forma-card">
                   <form>
-                    <h1 class="titulo">Registrarse</h1>
+                    <h2 class="titulo">Registrarse</h2>
                     <br>
                     <div class="mb-4">
                       <label for="emailRegister" class="form-label subtitulo">Dirección de correo electrónico</label>
@@ -91,37 +92,41 @@
             </div>
           </div>
     </main>
+    
 
     
     <footer>
-      <div class="container">
-          <div class="row text-center text-md-start ">
-              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                  <h5>NOSOTROS</h5>
-                  <hr class="mb-2">
-                  <p>Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
-              </div>
-              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                  <h5>AYUDA</h5>
-                  <hr class="mb-2">
-                  <p><a href="./pregfrec.html#como_comprar">Como Comprar</a></p>
-                  <p><a href="./pregfrec.html#envio_seguimiento">Envio y Seguimiento</a></p>
-                  <p><a href="./pregfrec.html#medios_pago">Medios de Pago</a></p>
-                  <p><a href="./pregfrec.html">Preguntas Frecuentes</a></p>
-              </div>
-              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto mt-3 text-center">
-                  <h5>SEGUINOS</h5>
-                  <hr class="mb-2">
-                  <p><a href="https://www.instagram.com/micaelaooficial/">Instagram</a></p>
-                  <p><a href="https://www.facebook.com/">Facebook</a></p>
-                  <p><a href="https://www.tiktok.com/">Tiktok</a></p>
-              </div>
-              <div class="col-md-6 col-lg-2 col-xl-3 mx-auto m-5 logo">
-                  <h5><a href="../index.html"><img class="img-fluid" src="../assents/logo_en_negro.PNG" alt="logo_de_micaela"></a></h5>
-              </div>
-          </div>
+      <div class="footercontainer">
+        <div>
+          <!-- Seccion de informacion de la tienda -->
+          <strong>NOSOTROS</strong>
+          <hr class="mb-2">
+          <p>Rivadavia 123, Catamarca, Capital <br> Lunes a Viernes de 9 a 13hs/ 18 a 21hs <br> Sabados de 9 a 13hs <br> WSP:3834123456</p>
+        </div> 
+        <div>
+          <!-- Seccion de ayuda al cliente -->
+          <strong>AYUDA</strong>
+            <hr class="mb-2">
+            <p><a href="./pregfrec.html#como_comprar">Como Comprar</a></p>
+            <p><a href="./pregfrec.html#envio_seguimiento">Envio y Seguimiento</a></p>
+            <p><a href="./pregfrec.html#medios_pago">Medios de Pago</a></p>
+            <p><a href="./pregfrec.html">Preguntas Frecuentes</a></p>
+        </div>
+        <div>
+          <!-- Seccion de redes sociales -->
+          <strong>SEGUINOS</strong>
+          <hr class="mb-2">
+          <p><a href="https://www.instagram.com/micaelaooficial/">Instagram</a></p>
+          <p><a href="https://www.facebook.com/">Facebook</a></p>
+          <p><a href="https://www.tiktok.com/">Tiktok</a></p>
+        </div>
+        <div class="posicionimg">
+          <!-- imagen del logo de la tienda -->
+          <strong><a href="../index.html"><img class="imagen" src="../assents/logo_en_negro.PNG" alt="logo_de_la_tienda_micaela"></a></strong>
+        </div>
       </div>
     </footer>
+
     <!-- css js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>

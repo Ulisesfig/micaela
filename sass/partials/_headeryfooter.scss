@@ -1,4 +1,5 @@
 
+//Header
 
 .mi-clase{
     background-color: $color2;
@@ -11,14 +12,12 @@
         .logo {
           max-width: 250px;
         }
+    }
+    @media (max-width: 576px) {
+      .logo {
+        max-width: 200px;
       }
-      
-      /* Dispositivos pequeños */
-      @media (max-width: 576px) {
-        .logo {
-          max-width: 200px;
-        }
-      }
+    }
     .posicion{
         justify-content: end;
     }
@@ -41,43 +40,70 @@
 }
 
 
+
+//footer
+
 footer{
-    margin-top: 3rem;
+  .footercontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
     background-color: $color1;
-
-    h5{
-        color: $fcolor2;
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-top: 3rem;
+    color: $color2;
+    text-align: center;
+  }
+  //media queries para que en dispositivos de entre 768px y 991px de pantalla se divida en 2 columnas el contenido del footer
+  @media (max-width: 991px) and (min-width: 768px) {
+  .footercontainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     }
-    p{
-        color: $fcolor2;
-        font-size: 1.3rem;
+  }
+  //media queries para que en dispositivos de 767px de pantalla para abajo se vean una sola columna con el contenido del footer
+  @media (max-width: 767px) {
+  .footercontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     }
-    a{
-        @extend p;
-        text-decoration: none;
+  }
+  strong{
+    color: $fcolor2;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  p{
+    color: $fcolor2;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  a{
+    @extend p;
+    text-decoration: none;
+  }
+  .posicionimg{
+    display: flex;
+    align-items: auto;
+    padding: 1rem;
+  }
+  .imagen{
+    max-width: 100%;
+    height: auto;
+    min-width: 200px;
+  }
+  //media queries para el logo de la marca en dispositivos de entre 991px y 768px de pantalla
+  @media (max-width: 991px) and (min-width: 768px) {
+  .imagen {
+    max-width: 75%;
     }
-    .logo {
-        width: 250px;
-        height: auto;
-        max-width: 600px; 
+  }
+  //media queries para el logo de la marca en dispositivos de 767px de pantalla para abajo
+  @media (max-width: 767px) {
+  .imagen {
+    max-width: 50%;
     }
-    @media (max-width: 992px) {
-        .logo {
-          max-width: 250px;
-        }
-      }
-      
-      /* Dispositivos pequeños */
-      @media (max-width: 576px) {
-        .logo {
-          max-width: 200px;
-        }
-      }
+  }
 }
-
-
 
 

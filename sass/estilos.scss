@@ -27,31 +27,56 @@ body{
 /* pagina index */
 .nuevos{
     @include flex(row,center,center);
-    @include titulo;
-}
-.ingresos{
-    .media{
-        @include flex(row,center,center);
-    }
-    h1{
+    padding: 1rem;
+    margin-top: 3rem;
+    h2{
         @include titulo;
     }
-    h5{
+}
+.ingresoscontainer{
+    padding-bottom: 2rem;
+    .ingresos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+        .ingresos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (min-width: 992px) {
+        .ingresos {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .item {
+        display: flex;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+    strong{
         @include subtitulo;
         color: $fcolor;
-        text-align: center
+    }
+    .ropa{
+        display: flex;
+        text-align:center;
+        height: 50%;
+    }
+    .precio{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
     p{
         @include extra;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: $color1;
-        margin-top: auto;
-        text-align: center
     }
     .zoom {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
     }
-      
     .zoom:hover {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -62,7 +87,31 @@ body{
 
 /* pagina mi cuenta */
 
-.micuenta{
+.micuenta-container {
+    width: 100%;
+    padding: 1.5rem;
+    .micuenta-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        column-gap: 1rem;           
+        row-gap: 1.5rem;            
+        color: $color3;              
+    }
+    @media (min-width: 992px) {
+        .micuenta-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .forma-card {
+        background-color: #1e1e1e;
+        padding: 1.5rem;          
+        border-radius: 0.5rem;     
+        box-shadow: 0 2px 8px #00000066;
+        height: 100%;              
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .titulo{
         @include titulo;
     }
@@ -72,20 +121,47 @@ body{
     .extra{
         @include extra;
     }
-}
+}    
 
 
 /* pagina shop */
 
-.shop{
+.shop-container{
+    padding: 0.5rem;
+    @media (min-width: 768px) {
+        .shop-container {
+            padding: 1.5rem;
+        }
+    }
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .shop-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 992px) {
+        .shop-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
     .subtitulo{
         @include subtitulo;
         color: $color1;
+        font-weight: 600;
     }
     .extra{
         @include extra;
         color: $color1;
+        font-size: 1.5rem;
     }
+    // clase para animacion de zoom
     .zoom {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -95,16 +171,45 @@ body{
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         z-index: 1;
     }
+
 }
 
 
 
-/* pagina sale */
 
+
+/* pagina sale */
 .sale{
     h1{
         @include titulo;
     }
+}
+.sale-container{
+    padding: 0.5rem;
+    @media (min-width: 768px) {
+        .sale-container {
+            padding: 1.5rem; 
+        }
+    }
+    .sale-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .sale-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 992px) {
+        .sale-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
     .oferta{
         font-weight: bold;
         font-size: 0.9rem;
@@ -115,15 +220,19 @@ body{
         @include subtitulo;
         color: $color1;
         text-align: start;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
     .extra{
         @include extra;
         color: $color1;
         text-align: start;
+        font-size: 1.5rem;
     }
     .tachado{
         text-decoration: line-through;
     }
+    // clase para animacion de zoom
     .zoom {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -140,7 +249,6 @@ body{
 /* pagina de preguntas frecuentes */
 
 .preg{
-
     .titulo{
         @include titulo;
     }
@@ -151,28 +259,44 @@ body{
         @include extra;
         color: $color1;
     }
+    .fila-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+
+    @media (min-width: 890px) {
+        .fila-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .columna{
+      padding: 1rem;  
+    }
+    h1{
+        padding-bottom: 2rem;
+    }
     .mi-acordeon {
         width: 100%;
         margin: 0 auto;
-        padding: 1rem;
     }
     @media (min-width: 768px) {
     .mi-acordeon {
-        width: 75%;
+        width: 100%;
         }
     }
     .mapa-ubicacion {
         width: 100%;
-        max-width: 75%;
-        height: 600px;  
+        max-width: 100%;
+        height: 550px;  
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        margin: 0 auto; 
+        margin: 0 auto;
     }
     @media (max-width: 768px) {
     .mapa-ubicacion {
-         height: 300px;
+        height: 400px;
         max-width: 100%;
         }
      }
